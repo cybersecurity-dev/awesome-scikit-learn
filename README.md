@@ -1,4 +1,9 @@
 <div align="center">
+    <p align="center">
+        <a href="https://wikipedia.org/wiki/Scikit-learn">
+          <img width="40%" src="https://github.com/cybersecurity-dev/cybersecurity-dev/blob/main/assets/Scikitlearn_logo.svg" />
+        </a>
+    </p>
 
 # **`Awesome`** [Scikit-learn](https://scikit-learn.org/) [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 </div>
