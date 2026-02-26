@@ -32,12 +32,34 @@
 ## Installation Steps
 
 * Linux
-  ```powershell
-  ```
+    * pip 
+      ```bash
+        python3 -m venv sklearn-env
+        source sklearn-env/bin/activate  # activate
+        pip3 install -U scikit-learn
+      ```
+      In order to check your installation, you can use:
+      ```bash
+        python3 -m pip show scikit-learn  # show scikit-learn version and location
+        python3 -m pip freeze             # show all installed packages in the environment
+        python3 -c "import sklearn; sklearn.show_versions()"
+      ```
+    * conda 
 
 * Windows
-  ```bash
-  ```
+    * pip 
+      ```powershell
+        python -m venv sklearn-env
+        sklearn-env\Scripts\activate  # activate
+        pip install -U scikit-learn
+      ```
+      In order to check your installation, you can use:
+      ```powershell
+        python -m pip show scikit-learn  # show scikit-learn version and location
+        python -m pip freeze             # show all installed packages in the environment
+        python -c "import sklearn; sklearn.show_versions()"
+      ```
+    * conda 
 
 ##
 
