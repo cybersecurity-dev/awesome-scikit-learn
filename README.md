@@ -1,9 +1,50 @@
 <div align="center">
     <p align="center">
         <a href="https://wikipedia.org/wiki/Scikit-learn">
-          <img width="25%" src="https://github.com/cybersecurity-dev/cybersecurity-dev/blob/main/assets/Scikitlearn_logo.svg" />
+          <img width="20%" src="https://github.com/cybersecurity-dev/cybersecurity-dev/blob/main/assets/Scikitlearn_logo.svg" />
         </a>
     </p>
+
+```mermaid
+flowchart LR
+    A[Input dataset] --> B[Data preprocessing]
+    B --> C[Feature engineering]
+    C --> D[Train-test split]
+    D --> E[Model selection]
+    E --> F[Model training]
+    F --> G[Cross-validation]
+    G --> H[Hyperparameter optimization]
+    H --> I[Model evaluation]
+    I --> J{Acceptable performance?}
+    J -->|No| C
+    J -->|Yes| K[Final pipeline]
+    K --> L[Model persistence]
+    L --> M[Deployment]
+
+    subgraph SKL["scikit-learn modules"]
+        B1[preprocessing and impute]
+        C1[feature_extraction and feature_selection]
+        D1[model_selection]
+        E1[linear_model, svm, tree, ensemble and cluster]
+        I1[metrics and inspection]
+        K1[pipeline and compose]
+    end
+
+    B -.-> B1
+    C -.-> C1
+    D -.-> D1
+    E -.-> E1
+    I -.-> I1
+    K -.-> K1
+
+    classDef stage fill:#e8f5e9,color:#1b5e20,stroke:#388e3c,stroke-width:1.5px
+    classDef module fill:#e3f2fd,color:#0d47a1,stroke:#1976d2,stroke-width:1.5px
+    classDef decision fill:#fff3e0,color:#e65100,stroke:#f57c00,stroke-width:2px
+
+    class A,B,C,D,E,F,G,H,I,K,L,M stage
+    class B1,C1,D1,E1,I1,K1 module
+    class J decision
+```
 
 # **`Awesome`** [Scikit-learn](https://scikit-learn.org/) [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 </div>
